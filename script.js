@@ -9,7 +9,7 @@ var resizeAll = function () {
         el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
     });
 };
-gallery.querySelectorAll('img').forEach(function (item) {
+gallery.querySelectorAll('img','video').forEach(function (item) {
     item.classList.add('byebye');
     if (item.complete) {
         console.log(item.src);
